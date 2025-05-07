@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Site Icons</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+        .card-body {
+            text-align: center;
+            padding: 2rem;
+        }
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            transition: background 0.3s ease;
+        }
+        .card:hover .icon-circle {
+            background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+        }
+        .icon-circle i {
+            font-size: 2.5rem;
+            color: white;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .card-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        @media (max-width: 576px) {
+            .card {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <!-- Diet Card -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <a href="https://peterbgood.github.io/Diet/" class="card">
+                    <div class="card-body">
+                        <div class="icon-circle">
+                            <i class="bi bi-apple"></i>
+                        </div>
+                        <h5 class="card-title">Diet</h5>
+                        <p class="card-text">Healthy eating plans</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Model Y Card -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <a href="https://peterbgood.github.io/ModelY/" class="card">
+                    <div class="card-body">
+                        <div class="icon-circle">
+                            <i class="bi bi-car-front-fill"></i>
+                        </div>
+                        <h5 class="card-title">Model Y</h5>
+                        <p class="card-text">Tesla Model Y info</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Model 3 Card -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <a href="https://peterbgood.github.io/Model3/" class="card">
+                    <div class="card-body">
+                        <div class="icon-circle">
+                            <i class="bi bi-car-front-fill"></i>
+                        </div>
+                        <h5 class="card-title">Model 3</h5>
+                        <p class="card-text">Tesla Model 3 info</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Budget Card -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <a href="https://peterbgood.github.io/budget/" class="card">
+                    <div class="card-body">
+                        <div class="icon-circle">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h5 class="card-title">Budget</h5>
+                        <p class="card-text">Financial planning</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Mortgage Card -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <a href="https://peterbgood.github.io/Mortgage/" class="card">
+                    <div class="card-body">
+                        <div class="icon-circle">
+                            <i class="bi bi-house-door-fill"></i>
+                        </div>
+                        <h5 class="card-title">Mortgage</h5>
+                        <p class="card-text">Home loan options</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
