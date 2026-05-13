@@ -31,7 +31,6 @@
             color: white;
         }
 
-        /* Entrance Animation for the whole row */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -55,18 +54,16 @@
             border-radius: 24px;
             padding: 35px 20px;
             text-align: center;
-            /* Smoother transition - removed the "cubic-bezier" that causes jitter */
             transition: all 0.3s ease-out;
             height: 100%;
             position: relative;
             overflow: hidden;
         }
 
-        /* Hover State - Focused on lighting rather than big jumps */
         .card-link:hover .glass-card {
             background: rgba(255, 255, 255, 0.07);
             border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-4px); /* Very subtle lift */
+            transform: translateY(-4px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
@@ -84,7 +81,7 @@
         }
 
         .card-link:hover .icon-box {
-            transform: scale(1.05); /* Just a tiny pulse */
+            transform: scale(1.05);
         }
 
         .card-title {
@@ -103,7 +100,6 @@
             letter-spacing: 1.2px;
         }
 
-        /* Sophisticated subtle light sweep */
         .glass-card::after {
             content: "";
             position: absolute;
@@ -168,10 +164,34 @@
                 <a href="https://peterbgood.github.io/fiscal-flow-ledger/" class="card-link">
                     <div class="glass-card">
                         <div class="icon-box" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
-                            <i class="bi bi-wallet2"></i>
+                            <i class="bi bi-lock-fill"></i>
                         </div>
-                        <h5 class="card-title">Budget</h5>
+                        <h5 class="card-title">Fixed Costs</h5>
                         <p class="card-text">Finance</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="https://peterbgood.github.io/budget/" class="card-link">
+                    <div class="glass-card">
+                        <div class="icon-box" style="background: linear-gradient(135deg, #f2994a, #f2c94c);">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h5 class="card-title">Monthly Budget</h5>
+                        <p class="card-text">Finance</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="https://peterbgood.github.io/vacation-budget/" class="card-link">
+                    <div class="glass-card">
+                        <div class="icon-box" style="background: linear-gradient(135deg, #FF4B2B, #FF416C);">
+                            <i class="bi bi-palm-tree"></i>
+                        </div>
+                        <h5 class="card-title">Vacation</h5>
+                        <p class="card-text">Travel</p>
                     </div>
                 </a>
             </div>
